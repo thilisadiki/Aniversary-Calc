@@ -8,13 +8,30 @@
 </head>
 <body>
     <div class="container">
-
-        <h3>Anniversary Calculator </h3>
-        <label for="originalDate">Enter Original/Start Date (YYYY-MM-DD):</label>
+        <h2>The anniversary Calculator</h2>
+        <label for="anniversaryType">Choose Anniversary Type:</label>
+        <select id="anniversaryType">
+            <option value="wedding">Wedding</option>
+            <option value="relationship">Relationship</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="originalDate">Original Date (YYYY-MM-DD):</label>
         <input type="text" id="originalDate" required>
         <button onclick="calculateAndDisplayAnniversary()">Calculate Next Anniversary</button>
         <div id="result"></div>
+
+        <a href="" onclick="return shareToWhatsApp()" class="share-button">Share to WhatsApp</a>
+
+
     </div>
+    
+    <div class="social-media">
+        <a href="https://www.facebook.com/your-profile" target="_blank" class="facebook">Facebook</a>
+        <a href="https://twitter.com/your-profile" target="_blank" class="twitter">Twitter</a>
+        <a href="https://www.instagram.com/your-profile" target="_blank" class="instagram">Instagram</a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="linkedin">LinkedIn</a>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
